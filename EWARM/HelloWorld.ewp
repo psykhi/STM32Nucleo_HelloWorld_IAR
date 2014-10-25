@@ -295,11 +295,9 @@
         <option>
           <name>CCIncludePath2</name>
           <state>$PROJ_DIR$\..\inc\</state>
-          <state>$PROJ_DIR$\..\..\</state>
           <state>$PROJ_DIR$\..\Libraries\CMSIS\Device\ST\STM32F10x\Include</state>
           <state>$PROJ_DIR$\..\Libraries\CMSIS\Include</state>
           <state>$PROJ_DIR$\..\Libraries\STM32F10x_StdPeriph_Driver\inc</state>
-          <state>$PROJ_DIR$\..\Utilities\STM32_Nucleo\stm32f1xx</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -931,6 +929,18 @@
     </file>
   </group>
   <group>
+    <name>HelloWorld</name>
+    <file>
+      <name>$PROJ_DIR$\..\src\main.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\stm32f1xx_it.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\system_stm32f10x.c</name>
+    </file>
+  </group>
+  <group>
     <name>STM32F10x_StdPeriph_Driver</name>
     <file>
       <name>$PROJ_DIR$\..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c</name>
@@ -1000,18 +1010,6 @@
     </file>
     <file>
       <name>$PROJ_DIR$\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c</name>
-    </file>
-  </group>
-  <group>
-    <name>HelloWorld</name>
-    <file>
-      <name>$PROJ_DIR$\..\src\main.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\src\stm32f1xx_it.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\src\system_stm32f10x.c</name>
     </file>
   </group>
 </project>

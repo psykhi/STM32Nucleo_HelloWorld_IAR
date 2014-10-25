@@ -120,7 +120,7 @@ static void init_delay_timer(void)
 	/*65535 is actually the maximum value for the counter before it wraps around */
 	TIM2_config.TIM_Period = 65535;
 	TIM2_config.TIM_Prescaler = prescaler;
-	TIM2_config.TIM_ClockDivision = TIM_CKD_DIV2;
+	TIM2_config.TIM_ClockDivision = TIM_CKD_DIV1;
 	TIM2_config.TIM_CounterMode = TIM_CounterMode_Up;
 
 	/* Now we call the init function */
