@@ -66,21 +66,21 @@ int main(void)
 	SystemCoreClockUpdate();
 	/*printf("Hello World ! From theboredengineers.com");*/
 
-	/* We init the LED GPIO */
+	/* We initialize the LED GPIO */
 	init_LED();
+
 	/* In order to use a delay, we need to use a general purpose
 	 * timer that will count the amount needed.
 	 */
 	init_delay_timer();
-	/* Init timer */
+
 	/* Infinite loop */
 	while (1)
 	{
-		delay_ms(1000);
+		delay_ms(500);
 		GPIO_SetBits(GPIOA,GPIO_Pin_5);
-		delay_ms(1000);
+		delay_ms(500);
 		GPIO_ResetBits(GPIOA,GPIO_Pin_5);
-
 	}
 }
 
